@@ -11,7 +11,7 @@ module.exports = function(grunt) {
           'css/main.css': 'sass/main.sass'
         }
       }
-    }
+    },
       
     imagemin: {
     dynamic: {
