@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC|Raleway:400,900&subset=latin-ext");
+* {
+  box-sizing: border-box; }
+
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+[class*="col"] {
+  float: left;
+  width: 100%;
+  padding: 12px; }
+
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif; }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 50px auto;
+  text-align: center; }
+
+nav.container {
+  margin: 0 auto;
+  text-align: center; }
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 0; }
+
+header {
+  background-color: #313234;
+  height: auto; }
+  header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+  header li {
+    display: block;
+    line-height: 30px;
+    padding: 0 5px; }
+    header lilast-of-type {
+      padding-bottom: 10px; }
+  header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase; }
+    header a:hover {
+      color: #69bcd6; }
+  header img {
+    padding: 10px 5px 5px 5px; }
+
+.hero {
+  height: 400px;
+  background: url(https://images.pexels.com/photos/45222/forest-fog-nature-winter-45222.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb);
+  background-size: cover; }
+
+.slogan {
+  float: right;
+  height: 180px;
+  width: 100vw;
+  background-color: rgba(49, 50, 52, 0.5);
+  margin-top: 110px;
+  padding: 40px;
+  text-align: center;
+  color: white;
+  font-size: 38px; }
+  .slogan h1 {
+    font-weight: normal; }
+    .slogan h1 .bold {
+      font-weight: bold; }
+
+.benefits [class*="col"] {
+  padding: 30px; }
+  .benefits [class*="col"]:hover .benef-title {
+    color: #69bcd6; }
+  .benefits [class*="col"]:hover .icon-benefits {
+    background-color: #69bcd6; }
+
+.icon-benefits {
+  width: 100px;
+  height: 100px;
+  border-radius: 20%;
+  background-color: #313234;
+  margin: 0 auto;
+  color: white;
+  font-size: 50px;
+  line-height: 100px; }
+
+.benef-title {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 0; }
+
+.benef-desciption {
+  font-size: 12px;
+  color: #A4A4A4;
+  margin-top: 4px; }
+
+.featured h1 {
+  text-transform: uppercase; }
+
+.featured p {
+  font-size: 16px;
+  color: #A4A4A4;
+  font-weight: normal; }
+
+.gallery img {
+  width: 100%;
+  float: left; }
+
+.gallery [class*=col] {
+  position: relative;
+  padding: 0; }
+
+.layer-gal, .layer-team {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(39, 40, 34, 0.5);
+  opacity: 0;
+  text-align: center;
+  color: white; }
+  .layer-gal .fa, .layer-team .fa {
+    padding: 10px;
+    display: inline-block;
+    font-size: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative; }
+
+.gallery [class*="col"]:hover > .layer-gal, .gallery [class*="col"]:hover > .layer-team,
+.team-photo:hover > .layer-team {
+  opacity: 1;
+  transition: .4s; }
+
+.team {
+  font-size: 22px; }
+  .team [class*=col]:first-child .team-photo {
+    background: url("https://typeset-beta.imgix.net/2016/4/4/arya-stark-1920-01b15d2e-9e15-4095-aa77-6cb06683be9c.jpg");
+    background-size: cover;
+    background-position: center; }
+
+.layer-team {
+  border-radius: 50%;
+  line-height: 175px; }
+
+.team-photo {
+  height: 220px;
+  width: 220px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background: url("https://i.giphy.com/media/DltVXAwNZ6Z6o/200_s.gif");
+  position: relative; }
+  .team-photo img {
+    width: 100%;
+    border-radius: 50%; }
+
+.promotion {
+  background: url("https://images.pexels.com/photos/262669/pexels-photo-262669.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+  background-size: cover;
+  background-position: center; }
+  .promotion .container {
+    text-align: left; }
+    .promotion .container .row .col-m-4 {
+      overflow: hidden; }
+  .promotion img {
+    width: 100%; }
+  .promotion h1 {
+    padding-left: 5px;
+    color: white;
+    font-size: 20px; }
+  .promotion .row .row [class*="col"] {
+    padding: 5px;
+    color: white; }
+  .promotion .col-m-8 {
+    padding-top: 14px; }
+  .promotion [class*="col"] p {
+    margin: 0;
+    font-size: 14px; }
+
+.item {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #69bcd6; }
+
+.num {
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 46px;
+  margin: 0; }
+
+.footer {
+  background-color: #313234;
+  color: white; }
+  .footer p {
+    margin: 0;
+    font-size: 14px; }
+  .footer h1 {
+    position: relative;
+    margin-bottom: 8px;
+    font-size: 24px;
+    color: white; }
+    .footer h1:after {
+      content: " ";
+      height: 1px;
+      width: 80px;
+      background-color: white;
+      position: absolute;
+      margin-left: 8px;
+      margin-right: 10px;
+      top: 14px; }
+  .footer .container {
+    text-align: left;
+    margin: 0 auto; }
+  .footer .row [class*="col"] {
+    padding: 20px; }
+  .footer .row .row {
+    margin-bottom: 10px; }
+    .footer .row .row .col-4 {
+      font-weight: bold; }
+  .footer .contact {
+    padding: 5px 0; }
+
+.btn-social {
+  width: 40px;
+  height: 40px;
+  background-color: #69bcd6;
+  margin: 10px 5px 0 0;
+  display: inline-block;
+  text-align: center; }
+  .btn-social .fa {
+    line-height: 40px;
+    font-size: 24px; }
+
+.copyright {
+  height: 60px;
+  background-color: #202020;
+  text-align: center;
+  line-height: 50px; }
+
+@media (max-width: 767px) {
+  .col-s-1 {
+    width: 8.33%; }
+  .col-s-2 {
+    width: 16.66%; }
+  .col-s-3 {
+    width: 25%; }
+  .col-s-4 {
+    width: 33.33%; }
+  .col-s-5 {
+    width: 41.66%; }
+  .col-s-6 {
+    width: 50%; }
+  .col-s-7 {
+    width: 58.33%; }
+  .col-s-8 {
+    width: 66.66%; }
+  .col-s-9 {
+    width: 75%; }
+  .col-s-10 {
+    width: 83.33%; }
+  .col-s-11 {
+    width: 91.66%; }
+  .col-s-12 {
+    width: 100%; } }
+
+@media (min-width: 768px) {
+  .col-m-1 {
+    width: 8.33%; }
+  .col-m-2 {
+    width: 16.66%; }
+  .col-m-3 {
+    width: 25%; }
+  .col-m-4 {
+    width: 33.33%; }
+  .col-m-5 {
+    width: 41.66%; }
+  .col-m-6 {
+    width: 50%; }
+  .col-m-7 {
+    width: 58.33%; }
+  .col-m-8 {
+    width: 66.66%; }
+  .col-m-9 {
+    width: 75%; }
+  .col-m-10 {
+    width: 83.33%; }
+  .col-m-11 {
+    width: 91.66%; }
+  .col-m-12 {
+    width: 100%; }
+  nav.container {
+    text-align: left; }
+  header ul {
+    float: right; }
+  header li {
+    display: inline-block;
+    padding: 14px 20px; }
+  .slogan {
+    width: 40vw;
+    text-align: left; }
+  .promotion {
+    height: 300px; }
+    .promotion .container > .row > .col-m-4 {
+      height: 300px; }
+    .promotion h1 {
+      padding-left: 20px;
+      font-size: 30px; }
+    .promotion .row .row [class*="col"] {
+      padding: 20px; }
+    .promotion .col-m-8 {
+      padding: 50px; }
+    .promotion [class*="col"] p {
+      font-size: 20px; } }
+
+/*# sourceMappingURL=main.css.map */
